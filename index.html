@@ -13,261 +13,258 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Fonts -->
-    <link as="font" crossorigin="anonymous" href="fonts/Montserrat-Medium.woff2" rel="preload" type="font/woff2">
-    <link as="font" crossorigin="anonymous" href="fonts/Montserrat-Bold.woff2" rel="preload" type="font/woff2">
-    <link as="font" crossorigin="anonymous" href="fonts/Montserrat-Regular.woff2" rel="preload" type="font/woff2">
-    <link as="font" crossorigin="anonymous" href="fonts/Montserrat-SemiBold.woff2" rel="preload" type="font/woff2">
-    <link as="font" crossorigin="anonymous" href="fonts/MuseoSans_500.woff2" rel="preload" type="font/woff2">
-    <link as="font" crossorigin="anonymous" href="fonts/MuseoSans_700.woff2" rel="preload" type="font/woff2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <header class="site-header">
-        <div class="nav container" id="nav-menu">
-            <a href="#home"><img class="logo" src="logo.svg"></a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#about" class="nav-link">О нас</a>
-                <a href="#tariff" class="nav-link">Тарифы</a>
-                <a href="#business" class="nav-link">Для бизнеса</a>
-                <a href="#be-in-team" class="nav-link">Психологам</a>
-                <a href="#sertifikat" class="nav-link">Сертификат</a>
-                <a href="#materials" class="nav-link">Материалы 
+    <header class="header">
+        <div class="nav container" id="nav">
+            <a href="#home"><img class="youtalk-logo" src="logo.svg" alt="youtalk logo"></a>
+            <div class="nav__menu" id="nav_menu">
+                <a href="#about" class="nav__link">О нас</a>
+                <a href="#tariff" class="nav__link">Тарифы</a>
+                <a href="#business" class="nav__link">Для бизнеса</a>
+                <a href="#be-in-team" class="nav__link">Психологам</a>
+                <a href="#sertifikat" class="nav__link">Сертификат</a>
+                <a href="#materials" class="nav__link">Материалы 
                     <span class="arrow_rotateblock">
                         <svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.9 9.1001L7 4.9001L2.1 9.1001" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </span>
                 </a>
-                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#faq" class="nav__link">FAQ</a>
             </div>
-            <button class="btn-selection">Подобрать психолога</button>
+            <button class="menu__btn">Подобрать психолога</button>
         </div>
     </header>
     <!-- Main -->
     <main class="main container">
-        <div class="loc">
-            <div class="loc_elem">Главная</div>
-            <svg class="loc_arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="address">
+            <div class="address__loc">Главная</div>
+            <svg class="address__arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.5 9.875L6.0625 8.3125L9.1875 5.1875L6.0625 2.0625L4.5 0.5" stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"/>
             </svg>
-            <div class="loc_elem">Блог</div>
+            <div class="address__loc">Блог</div>
         </div>
-        <h1 class="blog">Блог</h1>
-        <!-- Sorting Block -->
-        <div class="sort">
-            <div class="sort_tag">
-                <div><img class="emoji" src="thumbnails/all.svg"></div>
-                <p>Все</p>
-            </div>
-            <div class="sort_tag">
-                <p>Самооценка и самопринятие</p>
-            </div>
-            <div class="sort_tag_active">
-                <div><img class="emoji" src="thumbnails/unic.svg"></div>
-                <p>Self</p>
-            </div>
-            <div class="sort_tag">
-                <p>Чувства и эмоции</p>
-            </div>
-            <div class="sort_tag">
-                <p>Тревога</p>
-            </div>
-            <div class="sort_tag">
-                <p>Упражнения</p>
-            </div>
-            <div class="sort_tag">
-                <p>Психология питания</p>
-            </div>
-            <div class="sort_tag">
-                <p>Насилие</p>
-            </div>
-            <div class="sort_tag">
-                <p>Личное здоровье</p>
-            </div>
+        <h1 class="main__title">Блог</h1>
+        <!-- Filter Section -->
+        <div class="filter">
+            <button class="filter__tag">
+                <img class="filter__icon" src="thumbnails/all.svg" alt="">
+                <span class="filter__text">Все</span>
+            </button>
+            <button class="filter__tag">
+                <span class="filter__text">Самооценка и самопринятие</span>
+            </button>
+            <button class="filter__tag-active">
+                <img class="filter__icon" src="thumbnails/unic.svg" alt="">
+                <span class="filter__text">Self</span>
+            </button>
+            <button class="filter__tag">
+                <span class="filter__text">Чувства и эмоции</span>
+            </button>
+            <button class="filter__tag">
+                <span class="filter__text">Тревога</span>
+            </button>
+            <button class="filter__tag">
+                <span class="filter__text">Упражнения</span>
+            </button>
+            <button class="filter__tag">
+                <span class="filter__text">Психология питания</span>
+            </button>
+            <button class="filter__tag">
+                <span class="filter__text">Насилие</span>
+            </button>
+            <button class="filter__tag">
+                <span class="filter__text">Личное здоровье</span>
+            </button>
         </div>
-        <!-- Catalog Grid -->
-        <section class="catalog">
-            <div class="catalog_grid">
+        <!-- Blog Grid -->
+        <section class="blog">
+            <div class="blog__grid">
                 <div class="card card-large">
-                    <div class="card_tag">
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Самооценка и самопринятие</p>
+                    <div class="card__tags">
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Самооценка и самопринятие</span>
                         </div>
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Self</p>
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Self</span>
                         </div>
                     </div>
-                    <div class="img_placeholder"><img class="img-card" src="thumbnails/emotional.png" alt="Picture of eggs with faces"></div>
-                    <div class="card_text">
-                        <div class="card_text_title">
-                            <p class="card_title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</p>
-                            <p class="card_author">Автор: Лиза Файнтух</p>
-                        </div>
-                        <p class="card_summary">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                    <img class="card__image" src="thumbnails/emotional.png" alt="Picture of eggs with faces">
+                    <div class="card__text">
+                        <p class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</p>
+                        <p class="card__author">Автор: Лиза Файнтух</p>
+                        <p class="card__summary">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
                     </div>
-                    <p class="card_date">21.08.2021</p>
+                    <p class="card__date">21.08.2021</p>
                 </div>
                 <div class="card card-large">
-                    <div class="card_tag">
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Self</p>
+                    <div class="card__tags">
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Self</span>
                         </div>
                     </div>
-                    <div class="img_placeholder"><img class="img-card" src="thumbnails/anxiety.png" alt="Picture of nature"></div>
-                    <div class="card_text">
-                        <p class="card_title">Как не утонуть в тревоге и управлять своими страхами</p>
-                        <p class="card_author">Автор: Екатерина Бельтюкова</p>
-                        <p class="card_summary">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                        <p class="card_date">11.08.2021</p>
+                    <img class="card__image" src="thumbnails/anxiety.png" alt="Picture of nature">
+                    <div class="card__text">
+                        <p class="card__title">Как не утонуть в тревоге и управлять своими страхами</p>
+                        <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                        <p class="card__summary">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                        <p class="card__date">11.08.2021</p>
                     </div>
                 </div>
                 <div class="card card-small">
-                    <div class="card_tag">
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Самооценка и самопринятие</p>
+                    <div class="card__tags">
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Самооценка и самопринятие</span>
                         </div>
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Психология питания</p>
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Психология питания</span>
                         </div>
                     </div>
-                    <div class="img_placeholder"><img class="img-card" src="thumbnails/emotional2.png" alt="Picture of person in bed"></div>
-                    <div class="card_text">
-                        <p class="card_title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</p>
-                        <p class="card_author">Автор: Лиза Файнтух</p>
-                        <p class="card_summary">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                    <img class="img_placeholder" src="thumbnails/emotional2.png" alt="Picture of person in bed">
+                    <div class="card__text">
+                        <p class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</p>
+                        <p class="card__author">Автор: Лиза Файнтух</p>
+                        <p class="card__summary">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
                     </div>
-                    <p class="card_date">21.08.2021</p>
+                    <p class="card__date">21.08.2021</p>
                 </div>
                 <div class="card card-small">
-                    <div class="card_tag">
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Self</p>
+                    <div class="card__tags">
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Self</span>
                         </div>
                     </div>
-                    <div class="img_placeholder"><img class="img-card" src="thumbnails/anxiety2.png" alt="Picture of person in the pool"></div>
-                    <div class="card_text">
-                        <p class="card_title">Как не утонуть в тревоге и управлять своими страхами</p>
-                        <p class="card_author">Автор: Екатерина Бельтюкова</p>
-                        <p class="card_summary">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                        <p class="card_date">11.08.2021</p>
+                    <img class="card__image" src="thumbnails/anxiety2.png" alt="Picture of person in the pool">
+                    <div class="card__text">
+                        <p class="card__title">Как не утонуть в тревоге и управлять своими страхами</p>
+                        <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                        <p class="card__summary">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
                     </div>
+                    <p class="card__date">11.08.2021</p>
                 </div>
                 <div class="card card-small">
-                    <div class="card_tag">
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Self</p>
+                    <div class="card__tags">
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Self</span>
                         </div>
                     </div>
-                    <div class="img_placeholder"><img class="img-card" src="thumbnails/control.png" alt="Picture of poster with angry face"></div>
-                    <div class="card_text">
-                        <p class="card_title">Как управлять своими эмоциями: 8 шагов</p>
-                        <p class="card_author">Автор: Екатерина Бельтюкова</p>
-                        <p class="card_summary">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
-                        <p class="card_date">07.08.2021</p>
+                    <img class="card__image" src="thumbnails/control.png" alt="Picture of poster with angry face">
+                    <div class="card__text">
+                        <p class="card__title">Как управлять своими эмоциями: 8 шагов</p>
+                        <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                        <p class="card__summary">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
                     </div>
+                    <p class="card__date">07.08.2021</p>
                 </div>
                 <div class="card card-small">
-                    <div class="card_tag">
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Self</p>
+                    <div class="card__tags">
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Self</span>
                         </div>
                     </div>
-                    <div class="img_placeholder"><img class="img-card" src="thumbnails/emotional3.png" alt="Picture of person at the desk"></div>
-                    <div class="card_text">
-                        <p class="card_title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</p>
-                        <p class="card_author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
-                        <p class="card_summary">Изначально термин «эмоциональное я...</p>
+                    <img class="card__imgae" src="thumbnails/emotional3.png" alt="Picture of person at the desk">
+                    <div class="card__text">
+                        <p class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</p>
+                        <p class="card__author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
+                        <p class="card__summary">Изначально термин «эмоциональное я...</p>
                     </div>
-                    <p class="card_date">21.08.2021</p>
+                    <p class="card__date">21.08.2021</p>
                 </div>
                 <div class="card card-small">
-                    <div class="card_tag">
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Self</p>
+                    <div class="card__tags">
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Self</span>
                         </div>
                     </div>
-                    <div class="img_placeholder"><img class="img-card" src="thumbnails/anxiety3.png" alt="Picture of person in the pool"></div>
-                    <div class="card_text">
-                        <p class="card_title">Как не утонуть в тревоге и управлять своими страхами</p>
-                        <p class="card_author">Автор: Екатерина Бельтюкова</p>
-                        <p class="card_summary">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                        <p class="card_date">11.08.2021</p>
+                    <img class="card__image" src="thumbnails/anxiety3.png" alt="Picture of person in the pool">
+                    <div class="card__text">
+                        <p class="card__title">Как не утонуть в тревоге и управлять своими страхами</p>
+                        <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                        <p class="card__summary">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
                     </div>
+                    <p class="card__date">11.08.2021</p>
                 </div>
                 <div class="card card-small">
-                    <div class="card_tag">
-                        <div class="tag">
-                            <img class="emoji" src="thumbnails/unic.svg">
-                            <p>Self</p>
+                    <div class="card__tags">
+                        <div class="card__tag">
+                            <img class="card__tag-icon" src="thumbnails/unic.svg" alt="">
+                            <span class="card__tag-text">Self</span>
                         </div>
                     </div>
-                    <div class="img_placeholder"><img class="img-card" src="thumbnails/control2.png" alt="Picture of poster with angry face"></div>
-                    <div class="card_text">
-                        <p class="card_title">Как управлять своими эмоциями: 8 шагов</p>
-                        <p class="card_author">Автор: Екатерина Бельтюкова</p>
-                        <p class="card_summary">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
-                        <p class="card_date">07.08.2021</p>
+                    <img class="card__image" src="thumbnails/control2.png" alt="Picture of poster with angry face">
+                    <div class="card__text">
+                        <p class="card__title">Как управлять своими эмоциями: 8 шагов</p>
+                        <p class="card__author">Автор: Екатерина Бельтюкова</p>
+                        <p class="card__summary">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
                     </div>
+                    <p class="card__date">07.08.2021</p>
                 </div>
             </div>
-            <div class="expanding_container">
-                <div class="pagination_container">
+            <div class="expanding">
+                <div class="pages">
                     <ul class="pagination">
                         <li><a class="beginning" href="#">В начало</a></li>
-                        <li><a  class="active" href="#">1</a></li>
+                        <li><a class="active" href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                         <li><a href="#">...</a></li>
                         <li><a href="#">12</a></li>
                     </ul>
                 </div>
-                <button class="more_btn">Ещё</button>
+                <button class="pages__btn">Ещё</button>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <section class="footer__frame">
-            <div class="footer__frame_nav">
-                <div class="footer__frame_nav_list">
-                    <a href="#about" class="footer__frame_nav_list-link">О нас</a>
-                    <a href="#tariff" class="footer__frame_nav_list-link">Тарифы</a>
-                    <a href="#business" class="footer__frame_nav_list-link">Для бизнеса</a>
-                    <a href="#be-in-team" class="footer__frame_nav_list-link">Психологам</a>
-                    <a href="#be-in-team" class="footer__frame_nav_list-link">FAQ</a>
+        <section class="frame">
+            <div class="footer__nav">
+                <div class="footer__navcol">
+                    <a href="#about" class="footer__navlink">О нас</a>
+                    <a href="#tariff" class="footer__navlink">Тарифы</a>
+                    <a href="#business" class="footer__navlink">Для бизнеса</a>
+                    <a href="#be-in-team" class="footer__navlink">Психологам</a>
+                    <a href="#be-in-team" class="footer__navlink">FAQ</a>
                 </div>
-                <div class="footer__frame_nav_list">
-                    <a href="#blog" class="footer__frame_nav_list-link">Блог</a>
-                    <a href="#webinar" class="footer__frame_nav_list-link">Вебинары</a>
-                    <a href="#podcast" class="footer__frame_nav_list-link">Подкаст</a>
-                    <a href="#sertifikat" class="footer__frame_nav_list-link">Сертификат</a>
-                    <a href="#contact" class="footer__frame_nav_list-link">Контакты</a>
+                <div class="footer__navcol">
+                    <a href="#blog" class="footer__navlink">Блог</a>
+                    <a href="#webinar" class="footer__navlink">Вебинары</a>
+                    <a href="#podcast" class="footer__navlink">Подкаст</a>
+                    <a href="#sertifikat" class="footer__navlink">Сертификат</a>
+                    <a href="#contact" class="footer__navlink">Контакты</a>
                 </div>
             </div>
-            <div class="footer__frame_msg">
-                <div class="footer__frame_msg_cont">
-                    <p class="footer__frame_msg_cont_title">Одно письмо в неделю со свежими новостями и акциями</p>
-                    <form id="contactForm" class="footer__frame_msg_cont_contact-form">
-                        <input type="email" id="email" name="email" placeholder="Ваш e-mail" required="">
-                        <button type="submit" class="submit-btn">
+            <div class="subscribe-form">
+                <div class="footer__wrap">
+                    <p class="subscribe-form__desc">Одно письмо в неделю со свежими новостями и акциями</p>
+                    <form class="footer__subscrib" novalidate="">
+                        <div class="formfield">
+                            <input class="formfield__input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+                        </div>
+                        <button type="submit" class="subscrib__submit">
                             <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 11.6539H6V9.65391H0V0.499914C1.48755e-05 0.413029 0.0226703 0.327647 0.0657334 0.252184C0.108797 0.176722 0.170781 0.113783 0.245577 0.0695715C0.320372 0.0253602 0.405398 0.00140242 0.492273 5.97216e-05C0.579148 -0.00128298 0.664873 0.0200357 0.741 0.0619144L19.203 10.2159C19.2814 10.2591 19.3468 10.3225 19.3923 10.3995C19.4378 10.4766 19.4618 10.5644 19.4618 10.6539C19.4618 10.7434 19.4378 10.8313 19.3923 10.9083C19.3468 10.9853 19.2814 11.0488 19.203 11.0919L0.741 21.2459C0.664873 21.2878 0.579148 21.3091 0.492273 21.3078C0.405398 21.3064 0.320372 21.2825 0.245577 21.2383C0.170781 21.194 0.108797 21.1311 0.0657334 21.0556C0.0226703 20.9802 1.48755e-05 20.8948 0 20.8079V11.6539Z" fill="white"/>
                             </svg>
                         </button>
                     </form>
                 </div>
-                <p class="footer__frame_msg_condition">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
+                <p class="subscribe-form__desc2">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
             </div>
-            <div class="footer__frame_contact-info">
-                <div class="footer__frame_contact-info_label">
+            <div class="footer__socials">
+                <div class="sk-logo">
                     <svg width="100" height="50" viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M83.2307 23.751C86.2668 19.2628 87.1299 15.3838 85.7388 13.9927C85.3022 13.5662 84.6421 13.3428 83.779 13.3428C81.8801 13.3428 79.0775 14.409 75.9805 16.5008C77.2701 17.4959 78.5597 18.623 79.829 19.8923C81.0983 21.1616 82.2355 22.4512 83.2205 23.7408L83.2307 23.751Z" fill="white"/>
                         <path d="M69.646 19.9021C70.9152 18.6328 72.2049 17.4955 73.4945 16.5105C70.3974 14.4187 67.5948 13.3525 65.6959 13.3525C64.8429 13.3525 64.1728 13.5658 63.7361 14.0024C62.345 15.3936 63.2081 19.2624 66.2442 23.7607C67.2394 22.4711 68.3767 21.1815 69.6358 19.9122L69.646 19.9021Z" fill="white"/>
@@ -288,46 +285,20 @@
                         <path d="M107.748 4.82314H112.521L106.814 10.5502L112.754 18.6127H108.083L104.042 12.774L102.59 14.2565V18.6127H99.0156V4.81299H102.59V10.0526L107.748 4.81299V4.82314Z" fill="white"/>
                     </svg>
                 </div>
-                <div class="footer__frame_contact-info_social-links_cont">
-                    <div class="footer__frame_contact-info_social-links">
-                        <a class="social-link" href="#"> <!-- VK -->
-                            <div class="rectangle">
-                                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.8217 10.5411C19.768 10.4479 19.4355 9.69956 17.8353 8.16152C16.1602 6.55099 16.3852 6.81251 18.4029 4.02774C19.6317 2.33176 20.123 1.29605 19.9692 0.853278C19.823 0.431225 18.9192 0.542564 18.9192 0.542564L15.9139 0.560689C15.9139 0.560689 15.6914 0.529618 15.5252 0.631894C15.3639 0.732876 15.2601 0.965912 15.2601 0.965912C15.2601 0.965912 14.7839 2.27868 14.1488 3.39466C12.81 5.74961 12.2737 5.87389 12.0549 5.7276C11.5461 5.38711 11.6736 4.35787 11.6736 3.62769C11.6736 1.34524 12.0074 0.39368 11.0223 0.147699C10.6948 0.0661363 10.4548 0.0117614 9.61848 0.00269895C8.54591 -0.00895281 7.63709 0.00658289 7.1233 0.266806C6.78078 0.440288 6.51701 0.827385 6.67827 0.849394C6.87703 0.876582 7.32707 0.974974 7.56583 1.31158C7.87461 1.74529 7.86336 2.72144 7.86336 2.72144C7.86336 2.72144 8.04087 5.40782 7.44958 5.74184C7.0433 5.97099 6.487 5.50363 5.29317 3.36618C4.68187 2.2722 4.21934 1.06172 4.21934 1.06172C4.21934 1.06172 4.13058 0.836448 3.97182 0.716046C3.77931 0.569752 3.50929 0.523145 3.50929 0.523145L0.651577 0.54127C0.651577 0.54127 0.222795 0.554216 0.0652839 0.747118C-0.0747264 0.919305 0.054033 1.27404 0.054033 1.27404C0.054033 1.27404 2.2917 6.6947 4.82438 9.42768C7.1483 11.9328 9.786 11.7684 9.786 11.7684H10.9811C10.9811 11.7684 11.3424 11.727 11.5261 11.5211C11.6961 11.3321 11.6899 10.9774 11.6899 10.9774C11.6899 10.9774 11.6661 9.31634 12.4112 9.07166C13.145 8.83085 14.0876 10.677 15.0864 11.3878C15.8414 11.925 16.4152 11.8072 16.4152 11.8072L19.0867 11.7684C19.0867 11.7684 20.4843 11.6791 19.8217 10.5411Z" fill="#333333"/>
-                                </svg>
-                            </div>
-                        </a>                    
-                        <a class="social-link" href="#"> <!-- Telegram -->
-                            <div class="rectangle">
-                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.282608 6.76936L3.96933 8.16383L5.39632 12.8146C5.48763 13.1125 5.84704 13.2226 6.0856 13.0249L8.14064 11.3271C8.35606 11.1492 8.66288 11.1404 8.88801 11.306L12.5946 14.0331C12.8498 14.2211 13.2113 14.0794 13.2753 13.7669L15.9906 0.530734C16.0604 0.189359 15.7295 -0.0954258 15.4087 0.0302926L0.278288 5.94549C-0.0950996 6.09142 -0.0918463 6.62716 0.282608 6.76936ZM5.16635 7.42152L12.3716 2.92425C12.5011 2.84366 12.6343 3.0211 12.5231 3.12564L6.5767 8.72729C6.36768 8.92446 6.23286 9.18833 6.19467 9.47474L5.99211 10.996C5.96528 11.1991 5.68373 11.2193 5.62843 11.0227L4.84939 8.24863C4.76016 7.93223 4.89019 7.59426 5.16635 7.42152Z" fill="#333333"/>
-                                </svg>
-                            </div>
-                        </a>                   
-                        <a class="social-link" href="#"> <!-- Twitter -->
-                            <div class="rectangle">
-                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16.9858 1.63954C16.3496 1.92095 15.675 2.10577 14.9842 2.18788C15.7123 1.7524 16.2573 1.06705 16.5175 0.259542C15.8342 0.666208 15.085 0.951208 14.3042 1.10537C13.7797 0.544191 13.0845 0.172011 12.3266 0.0466956C11.5688 -0.0786197 10.7908 0.0499509 10.1136 0.412419C9.43633 0.774888 8.89782 1.35094 8.58176 2.05104C8.2657 2.75113 8.18979 3.53603 8.36583 4.28371C6.98009 4.21425 5.62444 3.85414 4.38691 3.22676C3.14937 2.59938 2.05761 1.71875 1.1825 0.642042C0.872742 1.17408 0.709963 1.7789 0.710833 2.39454C0.710833 3.60287 1.32583 4.67037 2.26083 5.29537C1.70751 5.27796 1.16636 5.12853 0.6825 4.85954V4.90287C0.682667 5.70762 0.961141 6.48756 1.47071 7.11042C1.98027 7.73329 2.68957 8.16077 3.47833 8.32038C2.96468 8.45957 2.42609 8.48009 1.90333 8.38037C2.12572 9.07307 2.55917 9.67887 3.14299 10.113C3.72681 10.5471 4.43177 10.7877 5.15917 10.8012C4.43623 11.369 3.60848 11.7887 2.72323 12.0364C1.83799 12.284 0.912606 12.3548 0 12.2445C1.59308 13.2691 3.44758 13.813 5.34167 13.8112C11.7525 13.8112 15.2583 8.50037 15.2583 3.89454C15.2583 3.74454 15.2542 3.59288 15.2475 3.44454C15.9299 2.95135 16.5188 2.34039 16.9867 1.64038L16.9858 1.63954Z" fill="#333333"/>
-                                </svg>
-                            </div>
-                        </a>
-                        <a class="social-link" href="#"> <!-- Yandex -->
-                            <div class="rectangle-dark">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6762 0C15.6006 6.58251 15.1702 10.2664 12.7183 12.7183C10.2664 15.1702 6.58251 15.6006 0 15.6762V16.6315C6.58251 16.707 10.2664 17.1375 12.7183 19.5894C15.1317 22.0028 15.5866 25.6099 15.6724 32H16.6353C16.721 25.6099 17.1759 22.0028 19.5894 19.5894C22.0028 17.1759 25.6099 16.721 32 16.6353V15.6723C25.6099 15.5866 22.0028 15.1317 19.5894 12.7183C17.1375 10.2664 16.707 6.58251 16.6315 0H15.6762Z" fill="white"/>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <ul class="socials__soc-list">
+                        <li class="soc-list__item"><a href="#"><img alt="Иконка логотипа ВКонтакте" src="thumbnails/vk.png"></a></li> <!-- VK -->          
+                        <li class="soc-list__item"><a href="#"><img alt="Иконка логотипа Телеграм" src="thumbnails/telegram.png"></a></li> <!-- Telegram -->          
+                        <li class="soc-list__item"><a href="#"><img alt="Иконка логотипа Телеграм" src="thumbnails/twitter.png"></a></li> <!-- Twitter -->        
+                        <li class="soc-list__item"><a href="#"><img alt="Иконка логотипа Телеграм" src="thumbnails/yandex.png"></a></li> <!-- Yandex -->
+                </ul>
             </div>
         </section>
-        <hr>
-        <section class="footer__credits">
-            <div class="footer__credits_cont">
-                <a class="footer__credits_link" href="#">©Youtalk, 2018 – 2022</a>
-                <a class="footer__credits_link" href="#">Юридические документы</a>
-                <a class="footer__credits_link" href="#">Способы оплаты</a>
+        <hr class="footer__line">
+        <section class="footer__underline">
+            <div class="underline__items">
+                <a class="underline_item" href="#">©Youtalk, 2018 – 2022</a>
+                <a class="underline_item" href="#">Юридические документы</a>
+                <a class="underline_item" href="#">Способы оплаты</a>
             </div>
         </section>
     </footer>
