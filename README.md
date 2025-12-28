@@ -3,7 +3,7 @@ Study project
 
 ## 🌐 Live Demo
 
-[[https://knopchhq.github.io/dragon-shop/](https://knopchhq.github.io/Youtalk_PJ/)]
+[[https://knopchhq.github.io/Youtalk_PJ/](https://knopchhq.github.io/Youtalk_PJ/)]
 
 ## 👀 Preview
 
