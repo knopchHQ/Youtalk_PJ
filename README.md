@@ -1,11 +1,11 @@
 # Youtalk
 Study project
 
-![Preview](thumbnails/preview.png)
-
 ## 🌐 Live Demo
 
 [[https://knopchhq.github.io/dragon-shop/](https://knopchhq.github.io/Youtalk_PJ/)]
+
+![Preview](thumbnails/preview.png)
 
 ## 🛠️ Technologies Used
 
