@@ -5,6 +5,8 @@ Study project
 
 [[https://knopchhq.github.io/dragon-shop/](https://knopchhq.github.io/Youtalk_PJ/)]
 
+## 👀 Preview
+
 ![Preview](thumbnails/preview.png)
 
 ## 🛠️ Technologies Used
