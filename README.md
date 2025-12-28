@@ -1,7 +1,7 @@
 # Youtalk
 Study project
 
-![Preview](images/preview.png)
+![Preview](thumbnails/preview.png)
 
 ## 🌐 Live Demo
 
