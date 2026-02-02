@@ -7,9 +7,9 @@ Study project
 
 ## 👀 Preview
 
-![Preview](thumbnails/preview.png)
+[![Preview](thumbnails/preview.png)](https://knopchhq.github.io/Youtalk_PJ/)
 
-![Preview](thumbnails/preview2.png)
+![Preview2](thumbnails/preview2.png)(https://knopchhq.github.io/Youtalk_PJ/article.html)
 
 ## 🛠️ Technologies Used
 
