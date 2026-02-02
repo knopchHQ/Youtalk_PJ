@@ -165,6 +165,8 @@ main {
     padding: 4px 8px;
     cursor: pointer;
     user-select: none;
+    text-decoration: none;
+    color: var(--text-primary);
 }
 .filter__tag-active {
     display: flex;
@@ -176,6 +178,8 @@ main {
     padding: 4px 8px;
     cursor: pointer;
     user-select: none;
+    text-decoration: none;
+    color: var(--text-primary);
 }
 .filter__tag:hover {
     border: 2px solid var(--secondary-color);
@@ -210,6 +214,11 @@ main {
     display: grid;
     grid-template-rows: auto 1fr;
     justify-items: stretch;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+.card:hover .card__title{
+    color: var(--main-color);
 }
 .card-large {
     grid-column: span 3;
