@@ -9,6 +9,8 @@ Study project
 
 ![Preview](thumbnails/preview.png)
 
+![Preview](thumbnails/preview2.png)
+
 ## 🛠️ Technologies Used
 
 - HTML5 + CSS3
