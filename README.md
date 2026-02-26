@@ -15,3 +15,5 @@ Study project
 
 - HTML5 + CSS3
 - Vanilla JavaScript
+
+Full Responsive Design for the following devices: Ipad Pro 12.9"; Ipad mini; Iphone Pro Max; Iphone SE.
